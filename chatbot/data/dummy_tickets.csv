@@ -1,0 +1,81 @@
+ticket_id,issue_category_id,description,status,priority,resolution_summary
+1,No Internet,Subscriber reports Red LOS light on ONT. No connectivity since morning.,Closed,High,Found a micro-bend in the fiber patch cord at the subscriber end. Replaced patch cord; signal levels restored to -19dBm.
+2,Slow Internet Speed,User getting only 10Mbps on a 100Mbps plan via Ethernet.,Closed,Medium,Identified a faulty Cat5 cable limiting the link speed to 10/100. Replaced with Cat6; speed tests now confirm 94Mbps.
+3,Router / ONT Issue,ONT is power cycling every 5 minutes.,Closed,High,Power adapter was outputting unstable voltage. Replaced 12V DC adapter; ONT stability confirmed for 24 hours.
+4,Wi-Fi Configuration,Customer unable to see the 5GHz SSID on new iPhone.,Closed,Low,"Logged into ONT; 5GHz radio was disabled. Enabled 5GHz, set channel width to 80MHz, and synchronized SSIDs."
+5,Network Outage,"Bulk reports of ""No Link"" in the North Sector.",Closed,Critical,Main distribution fiber cut due to road construction. Splicing team repaired the 24-core backbone fiber.
+6,Authentication Issue,"PPPoE error ""Authentication Failed"" on router logs.",Closed,Medium,Found a typo in the username on the radius server. Corrected credentials and reset the session.
+7,Hardware Failure,Core switch Port 15 shows no activity despite cable swap.,Closed,High,Confirmed SFP module failure. Replaced SFP with a new 10G LR module; link restored.
+8,Billing / Account,"Customer paid via app but account still shows ""Suspended.""",Closed,Medium,Payment gateway callback failed. Manually updated the ledger and triggered the automated un-suspension script.
+9,Slow Performance,High latency (200ms+) reported during peak evening hours.,Closed,Medium,Identified congestion on the secondary uplink. Re-routed traffic via the primary 10G link and optimized OSPF costs.
+10,Application Bug,CRM dashboard not loading ticket history for specific agents.,Closed,Low,Identified a JavaScript error in the caching layer. Cleared server-side Redis cache and patched the API endpoint.
+11,Access Request,New engineer needs read-only access to the OLT management console.,Closed,Low,Created a new LDAP user entry and assigned the 'Network-Monitor' role. Verified login.
+12,Change Request,"Request to increase bandwidth for the annual ""Day Zero"" event.",Closed,Medium,Temporarily modified the rate-limit profile on the subscriber port from 100M to 1G.
+13,No Internet,"""Connected, No Internet"" on all devices. DNS probe failed.",Closed,Medium,Found DNS servers were set to an old IP. Updated DHCP pool to use Google DNS (8.8.8.8) and Cloudflare (1.1.1.1).
+14,Router / ONT Issue,User changed settings and can no longer access the router admin page.,Closed,Low,Performed a hard factory reset. Reconfigured PPPoE and Wi-Fi settings remotely.
+15,Wi-Fi Configuration,Signal is very weak in the bedroom (30 feet from router).,Closed,Low,Advised customer on router placement. Relocated ONT to a central position and changed Wi-Fi channel to 11 to avoid interference.
+16,Slow Internet Speed,Upload speed is significantly lower than download speed on symmetrical plan.,Closed,Medium,Found ingress noise on the upstream frequency. Tightened connectors and replaced a faulty splitter.
+17,Authentication Issue,"User getting ""Maximum sessions reached"" error.",Closed,Medium,Hung session found on the BRAS. Cleared the MAC binding and restarted the PPPoE session.
+18,Application Bug,Tickets are not auto-assigning to the correct department.,Closed,Low,Fixed logic in the assignment engine where 'issue_category_id' was being misread as a string.
+19,Network Outage,Entire apartment complex reporting no service.,Closed,Critical,Found the local MDU switch was powered down. Building maintenance restored power to the utility room.
+20,Hardware Failure,SFP port on OLT is blinking orange.,Closed,High,Diagnosed as a failing laser in the transceiver. Replaced SFP; light levels normalized.
+21,Slow Performance,"VoIP calls dropping and ""robotic"" voice reported by office staff.",High,Identified high jitter on the WAN interface. Implemented Quality of Service (QoS) tagging (DSCP EF) for SIP traffic.,
+22,No Internet,"Desktop PC says ""Unidentified Network"" via LAN cable.",Medium,Found static IP configured on the NIC from a different subnet. Reverted to DHCP; IP assigned successfully.,
+23,Router / ONT Issue,"ONT ""Internet"" LED is green but no data passing to the router.",Medium,Bridge mode was misconfigured on the ONT. Reset to Routing mode and re-entered PPPoE credentials.,
+24,Wi-Fi Configuration,Client wants to isolate Guest Wi-Fi from the internal corporate network.,Medium,"Created a new SSID mapped to VLAN 200. Enabled ""AP Isolation"" to prevent guest-to-guest communication.",
+25,Network Outage,Complete loss of signal at the OLT uplink port.,Critical,Backhaul provider confirmed a fiber cut 5km from the POP. Service restored after splicing was completed.,
+26,Access Request,Requesting VPN access for a remote consultant.,Low,Created a Split-Tunnel VPN profile in FortiClient and issued a 2FA token to the user.,
+27,Hardware Failure,NAS drive not accessible; status light blinking red.,High,Identified a failed HDD in the RAID 5 array. Replaced drive; parity rebuilding initiated and access restored.,
+28,Change Request,Move the ONT from the living room to the study room upstairs.,Low,Field technician rerouted the drop cable and installed a new internal fiber socket in the study.,
+29,Slow Internet Speed,Speeds are fine during the day but drop to <1Mbps after 8 PM.,Medium,Investigated area-level splitters. Found over-subscription on the local PON port. Balanced load across a new port.,
+30,Authentication Issue,"User keeps getting ""Password Expired"" on the Wi-Fi portal.",Low,Synchronized Active Directory with the Wi-Fi Controller. Advised user to reset password via the web portal.,
+31,Application Bug,"Mobile app shows ""Internal Server Error 500"" when viewing billing history.",Medium,Found a null pointer exception in the SQL query for legacy accounts. Patched the backend controller.,
+32,Billing / Account,Double-charged for the month of December.,Low,Verified two transactions in the payment logs. Processed a refund for the duplicate transaction to the original payment method.,
+33,No Internet,Fiber cable was accidentally cut during home renovations.,High,Performed a mechanical splice at the break point. Tested signal levels; loss is within acceptable -22dBm range.,
+34,Slow Performance,Latency spikes occurring every 60 seconds exactly.,Medium,"Discovered a ""Broadcast Storm"" caused by a loop in a sub-switch. Enabled Spanning Tree Protocol (STP) to block the loop.",
+35,Router / ONT Issue,Router settings reset to factory defaults every time power is lost.,Medium,Internal CMOS/NVRAM failure on the router hardware. Replaced the router with a new unit.,
+36,Wi-Fi Configuration,Smart Home devices (2.4GHz) won't connect to the new router.,Low,"Discovered ""Band Steering"" was confusing legacy 2.4GHz chips. Created a dedicated 2.4GHz SSID for IoT devices.",
+37,Network Outage,Entire street has no internet; power is on.,Critical,Water ingress found in the outdoor distribution box (DP). Dried the terminals and resealed the enclosure.,
+38,Access Request,HR manager needs access to the payroll server folder.,Low,Modified NTFS permissions on the file server and added the user to the 'Payroll-Access' security group.,
+39,Hardware Failure,POE switch not powering up the attached IP cameras.,High,Internal POE power supply failed. Replaced the switch with a 24-port POE+ model.,
+40,Change Request,Customer wants to upgrade from 50Mbps to 300Mbps plan.,Low,Updated the subscriber profile in the BNG (Broadband Network Gateway) to the 300M/300M rate limit.,
+41,No Internet,"ONT shows ""Alarm"" light. Cable seems intact.",High,Found the OLT port had been administratively disabled due to a rogue ONT detection. Re-authorized the ONT.,
+42,Slow Internet Speed,Only getting 50% of the promised speed over Wi-Fi.,Medium,Used a Wi-Fi analyzer to find channel congestion on Channel 6. Switched router to Channel 1 (DFS) for cleaner airwaves.,
+43,Authentication Issue,Cannot log in to the employee portal from home.,Medium,User's IP was blacklisted due to multiple failed login attempts. Whitelisted the IP and reset the account lockout.,
+44,Application Bug,"The ""Forgot Password"" email is never received by users.",Low,SMTP relay was misconfigured on the mail server. Corrected the relay IP and verified email delivery.,
+45,Billing / Account,Account suspended despite having an active credit balance.,Low,"Logic error in the billing script ignored credit balances during the ""Late Pay"" sweep. Manually reactivated.",
+46,Slow Performance,Video buffering on 4K streams; other sites are fast.,Medium,Identified a peering bottleneck with the CDN provider. Adjusted BGP routing to favor a different exchange point.,
+47,Router / ONT Issue,Router's LAN port 1 is physically loose and disconnecting.,Low,Confirmed mechanical damage to the RJ45 port. Replaced the router under warranty.,
+48,Wi-Fi Configuration,Guest Wi-Fi password needs to be changed weekly for security.,Low,Implemented a scheduled script on the controller to rotate the WPA2 Pre-Shared Key (PSK) every Sunday.,
+49,Network Outage,Localized outage after a lightning storm.,Critical,Found the OVP (Over Voltage Protection) blown at the building entry point. Replaced the protector and fuse.,
+50,Access Request,"New hire needs access to the ""Engineering"" Slack channel and Jira.",Low,Provisioned accounts via Okta SSO and added user to the relevant department groups.,
+71,Slow Internet Speed,Speeds drop significantly when the microwave oven is running in the kitchen.,Low,Identified 2.4GHz frequency interference. Switched customer devices to the 5GHz band and changed the 2.4GHz channel to 11.,
+72,No Internet,"Customer reports ""LOS"" light is blinking red after a heavy windstorm.",High,Found the outdoor drop cable had tension damage near the pole. Re-tensioned and re-terminated the fiber connector.,
+73,Router / ONT Issue,Customer cannot port-forward for a home gaming server.,Medium,User was behind a Carrier-Grade NAT (CGNAT). Assigned a static Public IP address to allow inbound port forwarding.,
+74,Wi-Fi Configuration,"Wi-Fi works in the living room but ""Dead Zones"" found in the basement.",Low,Installed a Mesh Wi-Fi node in the hallway to extend coverage. Verified -65dBm signal strength in the basement.,
+75,Network Outage,"Multiple users in a high-rise reporting intermittent ""Request Timed Out"" (RTO).",Critical,Found an overheating edge switch in the building's MDF room. Replaced faulty cooling fans and restored airflow.,
+76,Authentication Issue,"Customer getting ""Error 691"" on their PPPoE dialer.",Medium,"Verified account was locked due to an outstanding balance. Once payment was confirmed, cleared the lock on the AAA server.",
+77,Hardware Failure,Wireless Access Point (WAP) in the lobby has no lights and is cold to the touch.,High,Tested POE injector; output was 0V. Replaced the 48V POE injector; WAP booted and broadcasted SSID immediately.,
+78,Change Request,"Request to enable ""Bridge Mode"" on the ONT for a custom pfSense router.",Medium,Unbound the MAC address from the ONT's internal route table and enabled LAN1 bridge pass-through.,
+79,Application Bug,"Ticket status changes back to ""Open"" automatically after being ""Resolved.""",Medium,Found a race condition in the API's webhook. Updated the database logic to prevent status reversion after a 'Final' flag is set.,
+80,Billing / Account,"Customer claims they were charged a ""Late Fee"" despite paying on the due date.",Low,System processed the payment after 11:59 PM due to server lag. Waived the fee as a one-time gesture.,
+81,Access Request,"New IT Auditor needs ""Logs Only"" access to the firewall.",Low,Created a custom RBAC (Role-Based Access Control) profile on the firewall with 'Read-Only' permissions for logs.,
+82,Slow Performance,Heavy packet loss observed only when uploading large files to Dropbox.,Medium,Found MTU size mismatch on the WAN interface. Adjusted MTU to 1492 to account for PPPoE overhead.,
+83,No Internet,IP address is showing as 169.254.x.x on the user's laptop.,Medium,DHCP server pool was exhausted. Expanded the subnet mask from /24 to /23 to provide more available IP addresses.,
+84,Router / ONT Issue,ONT is making a high-pitched whining noise (coil whine).,Low,Internal capacitor failing. Replaced the ONT unit to prevent total hardware failure in the future.,
+85,Wi-Fi Configuration,"Customer wants to hide their SSID for ""security reasons.""",Low,Disabled SSID Broadcast in the 2.4GHz and 5GHz radio settings as requested.,
+86,Network Outage,Sudden drop in light levels from -18dBm to -32dBm across 10 customers.,Critical,Found a dirty bulkhead connector at the local splitter. Cleaned with one-click fiber cleaner; levels returned to -18dBm.,
+87,Slow Internet Speed,"Download speed is fine, but Ping is 500ms+ in Valorant/League of Legends.",Medium,Traced path to game servers; found a congested peering link at the IXP. Rerouted game traffic through a different upstream provider.,
+88,Authentication Issue,"""MAC Address Not Authorized"" error on a newly purchased router.",Medium,The previous router's MAC was still bound to the port. Performed a 'MAC Flush' on the OLT port to allow the new device to pair.,
+89,Application Bug,"The ""Export to PDF"" button on the billing page results in a blank page.",Low,PDF library (wkhtmltopdf) was missing a font dependency on the server. Installed 'tty-fonts' and restarted the service.,
+90,Hardware Failure,Laptop Ethernet port is not clicking in; the plastic tab is broken inside.,Low,Removed broken plastic debris from the RJ45 port using tweezers. Port is now functional.,
+91,Change Request,"Customer wants to set up a ""Work From Home"" VLAN for their office laptop.",Medium,Configured a secondary SSID mapped to a dedicated VLAN with strict firewall rules separating it from the home LAN.,
+92,Slow Performance,Bufferbloat detected during high-bandwidth usage.,Medium,Enabled SQM (Smart Queue Management) with FQ_Codel on the router to prioritize small packets.,
+93,No Internet,"User plugged a LAN cable from one wall port to another, causing a network crash.",High,"Identified a ""Layer 2 Loop"" caused by the user. Enabled Loop Guard on the switch and shut down the offending port.",
+94,Router / ONT Issue,Customer cannot access 192.168.1.1.,Low,Found that the router's gateway IP had been changed to 192.168.0.1. Directed user to the correct local IP.,
+95,Wi-Fi Configuration,"Wi-Fi keeps switching between 2.4G and 5G, causing a 1-second disconnect.",Medium,"Disabled ""Smart Connect."" Separated the bands into two distinct SSIDs: ""Home_2.4G"" and ""Home_5G.""",
+96,Network Outage,Power outage at the Central Office (CO).,Critical,"UPS took over for 30 mins, then the Diesel Generator kicked in. Service remained stable throughout the transition.",
+97,Access Request,Admin needs SSH access to the core router from a specific external IP.,Low,Added an ACL entry to the management vty lines to permit the specific IP on Port 22.,
+98,Hardware Failure,"Large ""dark spot"" on the Fiber patch panel where a cable was melted.",High,Electrical short circuit in an adjacent rack caused thermal damage. Replaced the patch panel and re-terminated fibers.,
+99,Change Request,Customer wants to downgrade plan to save money.,Low,Adjusted the billing cycle and modified the bandwidth shaper profile on the BNG to 20Mbps/20Mbps.,
+100,Slow Internet Speed,Only 2Mbps on Wi-Fi but 100Mbps on Ethernet.,Medium,"Found the router was forced to ""802.11b"" mode. Updated settings to ""802.11n/ac Mixed"" to allow higher throughput.",

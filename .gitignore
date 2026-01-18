@@ -1,0 +1,194 @@
+# ============================================================================
+# CORTEXDESK PROJECT - GITIGNORE
+# ============================================================================
+
+# ============================================================================
+# BACKEND (Spring Boot / Java / Maven)
+# ============================================================================
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/*.log
+backend/*.class
+backend/*.jar
+backend/pom.xml.tag
+backend/pom.xml.releaseBackup
+backend/release.properties
+backend/dependency-reduced-pom.xml
+backend/.deployables
+backend/RemoteSystemsTempFiles/
+backend/mvnw.cmd
+backend/.factorypath
+backend/bin/
+backend/out/
+backend/build/
+backend/generated-sources/
+backend/generated-test-sources/
+
+# ============================================================================
+# FRONTEND (React / Vite / Node.js)
+# ============================================================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.npm
+frontend/.eslintcache
+frontend/.node_repl_history
+frontend/*.tsbuildinfo
+frontend/.env.local
+frontend/.env.*.local
+frontend/.parcel-cache
+frontend/.cache/
+frontend/coverage/
+
+# ============================================================================
+# CHATBOT (Python / Flask / AutoGen)
+# ============================================================================
+chatbot/__pycache__/
+chatbot/venv/
+chatbot/env/
+chatbot/.env
+chatbot/.env.local
+chatbot/dist/
+chatbot/build/
+chatbot/*.egg-info/
+chatbot/.eggs/
+chatbot/*.pyc
+chatbot/.pytest_cache/
+chatbot/.coverage
+chatbot/htmlcov/
+chatbot/site/
+chatbot/.mypy_cache/
+chatbot/.ruff_cache/
+chatbot/faiss_index/
+chatbot/embeddings/
+chatbot/uploads/
+
+# ============================================================================
+# IDE / EDITOR
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-workspace
+*.sublime-project
+.vim/
+.emacs*
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.iml
+*.iws
+*.ipr
+*.jmx
+
+# ============================================================================
+# OS / SYSTEM
+# ============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ============================================================================
+# LOCAL DEVELOPMENT
+# ============================================================================
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+secrets.txt
+credentials.json
+local_config.yaml
+
+# ============================================================================
+# DATABASE
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+database.yml
+/uploads/
+/storage/
+
+# ============================================================================
+# CACHE & TEMP FILES
+# ============================================================================
+.cache/
+.tmp/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+.gradle/
+.m2/
+
+# ============================================================================
+# LOGS
+# ============================================================================
+*.log
+logs/
+log/
+*.log.*
+debug.log
+
+# ============================================================================
+# PACKAGE LOCK FILES (Optional - uncomment if preferred)
+# ============================================================================
+# frontend/package-lock.json
+# frontend/yarn.lock
+# chatbot/poetry.lock
+
+# ============================================================================
+# COVERAGE REPORTS
+# ============================================================================
+coverage/
+.coverage
+htmlcov/
+.nyc_output/
+jest-coverage/
+
+# ============================================================================
+# DOCKER
+# ============================================================================
+.dockerignore
+docker-compose.override.yml
+
+# ============================================================================
+# MISC
+# ============================================================================
+*.orig
+.versionrc
+VERSION.txt

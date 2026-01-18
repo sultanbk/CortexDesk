@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: NetworkTicketingApp
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/networkticketingdb
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sbk74258@gmail.com
+    password: kmzo kkfo jmih rfkw
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+server:
+  port: 9091

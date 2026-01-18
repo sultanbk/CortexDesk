@@ -1,0 +1,15 @@
+python-dotenv
+google-genai
+autogen
+sentence-transformers
+faiss-cpu
+numpy
+azure-search-documents
+tqdm
+autogen_core
+fastapi
+uvicorn
+pydantic
+flask
+Flask-Cors
+openai

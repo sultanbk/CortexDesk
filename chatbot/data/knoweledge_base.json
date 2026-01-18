@@ -1,0 +1,284 @@
+[
+  {
+    "id": "121",
+    "category": "No Internet",
+    "problem": "Customer says the internet stopped working after cleaning the desk; router power light is off.",
+    "solution": "Found the power adapter was loose. Plugged the adapter firmly into the wall socket; service restored."
+  },
+  {
+    "id": "122",
+    "category": "Wi-Fi Configuration Issue",
+    "problem": "User forgot their Wi-Fi password and cannot connect new devices.",
+    "solution": "Guided the user to the router admin page (192.168.1.1) and reset the WPA2 Pre-Shared Key."
+  },
+  {
+    "id": "123",
+    "category": "Slow Internet Speed",
+    "problem": "Internet is slow when using Wi-Fi in the backyard far from the router.",
+    "solution": "Explained Wi-Fi range limitations. Recommended moving the router to a central location in the house."
+  },
+  {
+    "id": "124",
+    "category": "Router / ONT Issue",
+    "problem": "The router is frozen and the lights are not blinking.",
+    "solution": "Performed a power cycle by unplugging the router for 30 seconds. All services resumed after reboot."
+  },
+  {
+    "id": "125",
+    "category": "Billing / Account",
+    "problem": "Customer wants to know when their next bill is due.",
+    "solution": "Checked the billing system and informed the customer that the due date is the 5th of every month."
+  },
+  {
+    "id": "126",
+    "category": "No Internet",
+    "problem": "The LAN cable is plugged in but the computer says 'Cable Disconnected'.",
+    "solution": "The Ethernet cable was damaged. Replaced the cable with a new one; connection established."
+  },
+  {
+    "id": "127",
+    "category": "Wi-Fi Configuration Issue",
+    "problem": "Customer wants to change the name of their Wi-Fi (SSID).",
+    "solution": "Accessed the wireless settings and updated the SSID to the customer's preferred name."
+  },
+  {
+    "id": "128",
+    "category": "Slow Internet Speed",
+    "problem": "Customer reports slow speeds while downloading 5 large files at once.",
+    "solution": "Explained bandwidth sharing. Advised pausing some downloads to improve speed on the primary task."
+  },
+  {
+    "id": "129",
+    "category": "Authentication Issue",
+    "problem": "User is getting an 'Invalid Login' error on the self-service portal.",
+    "solution": "Sent a password reset link to the customer's registered email address."
+  },
+  {
+    "id": "130",
+    "category": "No Internet",
+    "problem": "Internet went out during a heavy rainstorm.",
+    "solution": "Found that the local power trip turned off the ONT. Flipped the circuit breaker and service returned."
+  },
+  {
+    "id": "131",
+    "category": "Router / ONT Issue",
+    "problem": "The Wi-Fi light on the router is off.",
+    "solution": "The physical Wi-Fi button on the side of the router was pressed by mistake. Pressed it again to enable Wi-Fi."
+  },
+  {
+    "id": "132",
+    "category": "Billing / Account",
+    "problem": "Customer wants to upgrade their current plan to the next higher speed.",
+    "solution": "Processed the plan change request in the CRM and applied the new speed profile immediately."
+  },
+  {
+    "id": "133",
+    "category": "No Internet",
+    "problem": "Red light on the router labeled 'Internet'.",
+    "solution": "The service was suspended due to non-payment. Reactivated service after the customer cleared the dues."
+  },
+  {
+    "id": "134",
+    "category": "Slow Performance",
+    "problem": "Websites are taking a long time to load on a single laptop.",
+    "solution": "Cleared the browser cache and cookies. Performance returned to normal."
+  },
+  {
+    "id": "135",
+    "category": "Hardware Failure",
+    "problem": "The power cord for the router is frayed and showing wires.",
+    "solution": "Swapped the damaged power cord with a new manufacturer-approved adapter for safety."
+  },
+  {
+    "id": "136",
+    "category": "Access Request",
+    "problem": "New tenant needs the Wi-Fi credentials for the shared office space.",
+    "solution": "Provided the authorized SSID and WPA2 password to the new user."
+  },
+  {
+    "id": "137",
+    "category": "Router / ONT Issue",
+    "problem": "User reset the router using a pin and now has no internet.",
+    "solution": "The factory reset erased the PPPoE settings. Re-configured the username and password on the router."
+  },
+  {
+    "id": "138",
+    "category": "Slow Internet Speed",
+    "problem": "Speed is slow on an old laptop but fast on a new phone.",
+    "solution": "Old laptop only supports 2.4GHz Wi-Fi. Recommended using a USB Wi-Fi adapter for 5GHz support."
+  },
+  {
+    "id": "139",
+    "category": "No Internet",
+    "problem": "The internet light is green but no websites are opening.",
+    "solution": "Restarted the user's computer to refresh the network stack. Internet started working."
+  },
+  {
+    "id": "140",
+    "category": "Wi-Fi Configuration Issue",
+    "problem": "Customer wants to set up a password for their Wi-Fi for the first time.",
+    "solution": "Enabled WPA2 security in the wireless settings and helped the user set a strong password."
+  },
+  {
+    "id": "141",
+    "category": "No Internet",
+    "problem": "The fiber cable at home was chewed by a pet.",
+    "solution": "Replaced the damaged fiber patch cable between the wall socket and the ONT."
+  },
+  {
+    "id": "142",
+    "category": "Billing / Account",
+    "problem": "Customer is confused about a 'Pro-rata' charge on their first bill.",
+    "solution": "Explained that the first bill includes the partial month from the activation date plus the next full month."
+  },
+  {
+    "id": "143",
+    "category": "Slow Performance",
+    "problem": "Online video is buffering frequently.",
+    "solution": "Changed the video quality from 4K to 1080p to match the available bandwidth of the current plan."
+  },
+  {
+    "id": "144",
+    "category": "Application Bug",
+    "problem": "The provider's mobile app keeps crashing when clicking 'Pay Bill'.",
+    "solution": "Advised the customer to update the app from the Play Store. Update resolved the crash."
+  },
+  {
+    "id": "145",
+    "category": "No Internet",
+    "problem": "All lights on the ONT are off despite being plugged in.",
+    "solution": "The power outlet was faulty. Plugged the ONT into a different wall socket and it powered on."
+  },
+  {
+    "id": "146",
+    "category": "Wi-Fi Configuration Issue",
+    "problem": "Customer wants to turn off Wi-Fi at night automatically.",
+    "solution": "Configured the 'Wi-Fi Schedule' feature in the router settings to turn off radios from 12 AM to 6 AM."
+  },
+  {
+    "id": "147",
+    "category": "Slow Internet Speed",
+    "problem": "Speeds are low because the router is hidden inside a metal cabinet.",
+    "solution": "Moved the router out of the metal cabinet to reduce signal shielding. Speeds improved immediately."
+  },
+  {
+    "id": "148",
+    "category": "Authentication Issue",
+    "problem": "User is getting a 'Remote Server Not Responding' error on their router.",
+    "solution": "Verified the PPPoE password was entered incorrectly. Updated the password and connection was established."
+  },
+  {
+    "id": "149",
+    "category": "Hardware Failure",
+    "problem": "One of the LAN ports on the back of the router is physically broken.",
+    "solution": "Advised the user to use one of the other three functional LAN ports."
+  },
+  {
+    "id": "150",
+    "category": "Network Outage",
+    "problem": "The whole neighborhood has no internet light on their routers.",
+    "solution": "Identified a power failure at the local distribution node. Service resumed once power was restored."
+  },
+    {
+        "id": "pr-001",
+        "category": "Password Reset",
+        "problem": "I forgot my email password.",
+        "solution": "Please go to the company login page, click on 'Forgot Password', and follow the steps to reset your email password."
+    },
+    {
+        "id": "pr-002",
+        "category": "Password Reset",
+        "problem": "My account is locked due to multiple failed login attempts.",
+        "solution": "Wait 15 minutes for auto-unlock or contact IT to manually reset your account."
+    },
+    {
+        "id": "pr-003",
+        "category": "Password Reset",
+        "problem": "How can I change my password proactively?",
+        "solution": "Log in to the company portal, go to 'Account Settings', and click on 'Change Password'."
+    },
+    {
+        "id": "ni-001",
+        "category": "Network Issue",
+        "problem": "Unable to connect to VPN.",
+        "solution": "Ensure VPN client is up to date. Restart your PC, launch the VPN app, and reconnect."
+    },
+    {
+        "id": "ni-002",
+        "category": "Network Issue",
+        "problem": "Internet is slow.",
+        "solution": "Disconnect and reconnect to Wi-Fi. If the issue persists, contact the local IT network admin."
+    },
+    {
+        "id": "ni-003",
+        "category": "Network Issue",
+        "problem": "VPN keeps disconnecting frequently.",
+        "solution": "Check if you're on a stable network. If on mobile hotspot, switch to wired or Wi-Fi."
+    },
+    {
+        "id": "hi-001",
+        "category": "Hardware Issue",
+        "problem": "Laptop keyboard is not working.",
+        "solution": "Try restarting the laptop. If the issue persists, plug in an external keyboard and raise a hardware replacement ticket."
+    },
+    {
+        "id": "hi-002",
+        "category": "Hardware Issue",
+        "problem": "Monitor is not displaying anything.",
+        "solution": "Check power cable and HDMI/DisplayPort connection. Try another monitor if possible."
+    },
+    {
+        "id": "hi-003",
+        "category": "Hardware Issue",
+        "problem": "Mouse is unresponsive.",
+        "solution": "Check battery or USB connection. If wireless, try reconnecting the dongle or Bluetooth."
+    },
+    {
+        "id": "sb-001",
+        "category": "Software Bug",
+        "problem": "Outlook crashes on opening.",
+        "solution": "Run Outlook in safe mode (`outlook.exe /safe`). If it works, disable add-ins one by one."
+    },
+    {
+        "id": "sb-002",
+        "category": "Software Bug",
+        "problem": "HR portal gives 500 error after login.",
+        "solution": "Clear browser cache and cookies, then try again. If issue persists, escalate to HR portal dev team."
+    },
+    {
+        "id": "sb-003",
+        "category": "Software Bug",
+        "problem": "Teams not syncing messages.",
+        "solution": "Restart Teams, sign out and sign back in. If still broken, clear Teams cache from `%appdata%`."
+    },
+    {
+        "id": "ar-001",
+        "category": "Access Request",
+        "problem": "Need access to HR shared drive.",
+        "solution": "Please fill the access request form and get approval from your HR manager."
+    },
+    {
+        "id": "ar-002",
+        "category": "Access Request",
+        "problem": "Requesting access to Jira project XYZ.",
+        "solution": "Raise an access request via the service portal specifying the project and justification."
+    },
+    {
+        "id": "ar-003",
+        "category": "Access Request",
+        "problem": "I need admin rights to install software.",
+        "solution": "Submit a software install request. IT will verify the license and grant temporary admin access if valid."
+    },
+    {
+        "id": "oth-001",
+        "category": "Other",
+        "problem": "Looking for the company's leave policy.",
+        "solution": "You can find all HR policies in the internal HR portal under the 'Documents' section."
+    },
+    {
+        "id": "oth-002",
+        "category": "Other",
+        "problem": "Need to know how to report phishing emails.",
+        "solution": "Forward suspected phishing emails to `phishalert@company.com` and notify your manager."
+    }
+]
