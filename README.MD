@@ -265,7 +265,7 @@ For issues specific to each component, see:
 
 ## 📄 License
 
-Internal project - Prodapt
+Prodapt Training Project
 
 ---
 
