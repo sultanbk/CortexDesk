@@ -25,6 +25,8 @@ backend/out/
 backend/build/
 backend/generated-sources/
 backend/generated-test-sources/
+backend/src/main/resources/application.yml
+backend/src/main/resources/application.properties
 
 # ============================================================================
 # FRONTEND (React / Vite / Node.js)
